@@ -1,0 +1,72 @@
+# 개발 워크스테이션 구축
+
+## 1. 프로젝트 개요
+
+터미널, 파일 권한, Docker, Git/GitHub를 직접 사용해 재현 가능한 개발 환경을 구축하고, 각 단계의 명령과 검증 결과를 문서화하는 프로젝트입니다.
+
+## 2. 실행 환경
+
+- OS: macOS 15.7.4 (Build 24G517, x86_64)
+- Shell: zsh (`/bin/zsh`)
+- Terminal: Apple Terminal
+- Docker version: 28.5.2, build ecc6942
+- Git: 2.53.0
+
+-[./evidence/evidence.md](./evidence/environement.md)
+
+## 3. 수행 항목 체크리스트
+
+- 터미널 조작
+- 권한 실습
+- Docker 설치 및 점검
+- Docker 기본 운영 명령 수행
+- 컨테이너 실행 실습
+- 기존 Dockerfile 기반 커스텀 이미지 제작
+- 포트매팅 및 접속 증거
+- Docker 볼륨 영속성 검증
+- Git 설정 및 GitHub 연동
+- 보안 및 개인정보보호
+
+수행 항목별 입출력 로그는 [./evidence/tasks/](./evidence/tasks/)에 저장합니다.
+
+## 3.1 터미널 조작
+
+-[./evidence/environment.md](./evidence/environement.md)
+
+## 3.2 권한 실습
+
+-[./evidence/permissions](./evidence/permissions.md)
+
+## 3.3 Docker 설치 및 점검
+
+-[./evidence/docker-installation.md](./evidence/docker-installation.md)
+
+## 3.4 Docker 기본 운영 명령 수행
+
+-[./evidence/tasks/docker-basic.md](./evidence/tasks/docker-basic.md)
+
+## 3.5 컨테이너 실행 실습
+
+- [x] 커스텀 웹 컨테이너를 `8080:80` 포트 매핑으로 실행
+- [x] `curl http://localhost:8080`으로 `HTTP/1.1 200 OK` 응답 확인
+- [수행 로그 및 증거](./evidence/tasks/container-execution.md)
+
+## 3.6 기존 Dockerfile 기반 커스텀 이미지 제작
+
+- [수행 로그 및 증거](./evidence/tasks/custom-image.md)
+
+## 3.7 포트매팅 및 접속 증거
+
+- [수행 로그 및 증거](./evidence/tasks/port-mapping.md)
+
+## 3.8 Docker 볼륨 영속성 검증
+
+- [수행 로그 및 증거](./evidence/tasks/docker-volume.md)
+
+## 3.9 Git 설정 및 GitHub 연동
+
+- [수행 로그 및 증거](./evidence/tasks/git-github.md)
+
+## 3.10 보안 및 개인정보보호
+
+- [수행 로그 및 증거](./evidence/tasks/security.md)
