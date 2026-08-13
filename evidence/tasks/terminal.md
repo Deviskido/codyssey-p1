@@ -5,25 +5,26 @@ $ pwd
 /Users/rkdsim900244/codyssey/codyssey-p1
 
 $ ls -la
-total 192
-drwxr-xr-x  9 rkdsim900244  rkdsim900244    288 Aug 10 10:36 .
-drwxr-xr-x  6 rkdsim900244  rkdsim900244    192 Aug 10 09:58 ..
--rw-r--r--@ 1 rkdsim900244  rkdsim900244   6148 Aug 10 10:36 .DS_Store
--rw-r--r--  1 rkdsim900244  rkdsim900244     17 Aug 10 10:27 .gitignore
--rw-r--r--  1 rkdsim900244  rkdsim900244     64 Aug 10 10:26 Dockerfile
--rw-r--r--@ 1 rkdsim900244  rkdsim900244   3066 Aug 10 11:23 README.md
-drwxr-xr-x  3 rkdsim900244  rkdsim900244     96 Aug 10 10:26 app
--rw-r--r--@ 1 rkdsim900244  rkdsim900244  67153 Aug 10 10:00 requirements.rtf
--rw-r--r--@ 1 rkdsim900244  rkdsim900244   5624 Aug 10 10:25 workflow.txt
+total 32
+drwxr-xr-x  11 rkdsim900244  rkdsim900244   352 Aug 13 16:03 .
+drwxr-x---+ 17 rkdsim900244  rkdsim900244   544 Aug 13 16:03 ..
+drwxr-xr-x  13 rkdsim900244  rkdsim900244   416 Aug 13 16:05 .git
+-rw-r--r--   1 rkdsim900244  rkdsim900244    17 Aug 13 16:03 .gitignore
+-rw-r--r--   1 rkdsim900244  rkdsim900244    64 Aug 13 16:03 Dockerfile
+-rw-r--r--   1 rkdsim900244  rkdsim900244    17 Aug 13 16:03 Dockerfile.ubuntu
+-rw-r--r--   1 rkdsim900244  rkdsim900244  2073 Aug 13 16:10 README.md
+drwxr-xr-x   3 rkdsim900244  rkdsim900244    96 Aug 13 16:03 app
+drwxr-xr-x   4 rkdsim900244  rkdsim900244   128 Aug 13 16:08 evidence
+drwxr-xr-x   4 rkdsim900244  rkdsim900244   128 Aug 13 16:03 practice
 ```
 
 디렉토리를 생성하고 `cd`로 이동한 뒤, 빈 파일과 숨김 파일을 만들었습니다.
 
 ```console
-$ mkdir -p terminal-practice/source terminal-practice/archive
-$ cd terminal-practice
+$ mkdir -p practice/terminal-practice/source practice/terminal-practice/archive
+$ cd practice/terminal-practice
 $ pwd
-/Users/rkdsim900244/codyssey/codyssey-p1/terminal-practice
+/Users/rkdsim900244/codyssey/codyssey-p1/practice/terminal-practice
 
 $ touch empty-file.txt .hidden-file
 $ ls -la
@@ -39,7 +40,7 @@ drwxr-xr-x   2 rkdsim900244  rkdsim900244   64 Aug 10 11:26 source
 상대 경로를 이용해 웹 파일을 복사한 다음 다른 디렉토리로 이동하면서 이름을 변경했습니다.
 
 ```console
-$ cp ../app/index.html source/page-copy.html
+$ cp ../../app/index.html source/page-copy.html
 $ ls -la source
 total 8
 drwxr-xr-x  3 rkdsim900244  rkdsim900244   96 Aug 10 11:26 .

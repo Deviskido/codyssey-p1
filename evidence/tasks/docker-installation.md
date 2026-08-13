@@ -2,6 +2,7 @@
 
 ## Docker 버전 확인
 
+이 과제에서 orbstak 을 실행후
 `docker --version`으로 Docker CLI가 설치되어 있는지와 설치된 버전을 확인했습니다.
 
 ```console

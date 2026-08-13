@@ -3,6 +3,7 @@
 실습 대상을 만들고 파일에는 `644`, 디렉토리에는 `755` 권한을 설정한 뒤 현재 상태를 확인합니다.
 
 ```console
+$ cd ~/codyssey-p1/practice
 $ mkdir -p permission-practice/shared-dir
 $ touch permission-practice/sample.txt
 $ chmod 644 permission-practice/sample.txt
@@ -30,4 +31,15 @@ drwx------  2 rkdsim900244  rkdsim900244  64 Aug 10 11:29 permission-practice/sh
 $ stat -f '%N: %Sp (%OLp)' permission-practice/sample.txt permission-practice/shared-dir
 permission-practice/sample.txt: -rw------- (600)
 permission-practice/shared-dir: drwx------ (700)
+```
+
+```console
+$ ls -l permission-practice
+total 0
+-rw-------  1 rkdsim900244  rkdsim900244   0 Aug 13 18:15 sample.txt
+drwx------  2 rkdsim900244  rkdsim900244  64 Aug 13 18:15 shared-dir
+$ rm -f permission-practice/sample.txt 
+$ rm -rf permission-practice/shared-dir 
+$ ls -l permission-practice 
+total 0
 ```

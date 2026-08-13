@@ -12,7 +12,7 @@
 - Docker version: 28.5.2, build ecc6942
 - Git: 2.53.0
 
--[./evidence/evidence.md](./evidence/environement.md)
+-[./evidence/tasks/evidence.md](./evidence/tasks/environement.md)
 
 ## 3. 수행 항목 체크리스트
 
@@ -25,21 +25,20 @@
 - 포트매팅 및 접속 증거
 - Docker 볼륨 영속성 검증
 - Git 설정 및 GitHub 연동
-- 보안 및 개인정보보호
 
 수행 항목별 입출력 로그는 [./evidence/tasks/](./evidence/tasks/)에 저장합니다.
 
 ## 3.1 터미널 조작
 
--[./evidence/environment.md](./evidence/environement.md)
+-[./evidence/tasks/terminal.md](./evidence/tasks/terminal.md)
 
 ## 3.2 권한 실습
 
--[./evidence/permissions](./evidence/permissions.md)
+-[./evidence/tasks/permissions](./evidence/tasks/permissions.md)
 
 ## 3.3 Docker 설치 및 점검
 
--[./evidence/docker-installation.md](./evidence/docker-installation.md)
+-[./evidence/docker-installation.md](./evidence/tasks/docker-installation.md)
 
 ## 3.4 Docker 기본 운영 명령 수행
 
