@@ -7,11 +7,9 @@
 
 ## 컨테이너 이미지 생성
 
-`docker build -f Dockerfile.ubuntu -t hello-world .`
+`docker build -f Dockerfile.ubuntu -t codyssey-web:1.0 .`
 
 ## 컨테이너 실행
-
-기존에 빌드한 `codyssey-web:1.0` 이미지를 사용했습니다.
 
 ```console
 $ docker run -dit --name hello-world -p 8080:80 codyssey-web:1.0 sh
@@ -53,7 +51,7 @@ EXECUTE는 해당 컨테이너에서 새로운 프로세스를 실행시키는�
 
 `docker exec -it hello-world sh`
 -d 옵션이 아니니 내부 쉘로 연결된다. 메인 프로세스가아닌 sh프로세스를 추가로 실행시킨다.
-docker 컨테이너 내부에서 exec하는 경우에는 메인프로세스가 새로운 프로세스로 변경되는것과 다르다.
+attach로 내부로들어가 docker 컨테이너 내부에서 exec하는 경우에는 메인프로세스가 새로운 프로세스로 변경된다.
 
 <!-- 
 ## HTTP 응답 확인

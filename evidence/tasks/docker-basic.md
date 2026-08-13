@@ -96,4 +96,20 @@ codyssey-web-ops
 $ docker ps -a
 CONTAINER ID   IMAGE              COMMAND                  CREATED          STATUS                     PORTS     NAMES
 a8f54cfd7c81   codyssey-web:1.0   "/docker-entrypoint.…"   22 minutes ago   Exited (0) 5 seconds ago             codyssey-web-ops
+
+
+$ docker rm codyssey-web-ops 
+codyssey-web-ops
+
+$ docker ps -a
+CONTAINER ID   IMAGE     COMMAND   CREATED   STATUS    PORTS     NAMES
+
+
+$ docker rmi codyssey-web:1.0
+Untagged: codyssey-web:1.0
+Deleted: sha256:cf33ad74947509eb07731bf5cddedc96d356fb4d8b9ba484f47b1333b1bb4099
+
+$ docker images
+REPOSITORY   TAG       IMAGE ID   CREATED   SIZE
+
 ```

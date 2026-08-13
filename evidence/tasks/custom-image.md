@@ -62,7 +62,7 @@ $ docker run -d --name codyssey-custom-image -p 8080:80 codyssey-web:1.0
 66fca770f7dafde060a872f3d21bc589409b58196e0bc95dd0eda468a8768b1d
 ```
 
-실행 상태와 포트 매핑은 다음 명령으로 확인한다.
+실행 상태와 포트 매핑은 다음 명령으로 확인한다.?
 
 ```console
 $ docker ps

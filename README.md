@@ -46,9 +46,7 @@
 
 ## 3.5 컨테이너 실행 실습
 
-- [x] 커스텀 웹 컨테이너를 `8080:80` 포트 매핑으로 실행
-- [x] `curl http://localhost:8080`으로 `HTTP/1.1 200 OK` 응답 확인
-- [수행 로그 및 증거](./evidence/tasks/container-execution.md)
+- [./evidence/tasks/container-execution.md](./evidence/tasks/container-execution.md)
 
 ## 3.6 기존 Dockerfile 기반 커스텀 이미지 제작
 
