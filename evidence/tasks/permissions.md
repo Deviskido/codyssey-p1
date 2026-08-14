@@ -2,6 +2,8 @@
 
 실습 대상을 만들고 파일에는 `644`, 디렉토리에는 `755` 권한을 설정한 뒤 현재 상태를 확인합니다.
 
+각 비트는 file or directory_owner_group_other 의 권한을 나타낸다.
+
 ```console
 $ cd ~/codyssey-p1/practice
 $ mkdir -p permission-practice/shared-dir

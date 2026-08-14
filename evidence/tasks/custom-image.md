@@ -7,7 +7,7 @@
 
 ## Dockerfile 구성
 
-프로젝트 루트의 `Dockerfile`은 다음과 같다.
+프로젝트 루트의 `Dockerfile.web`은 다음과 같다.
 
 ```dockerfile
 FROM nginx:alpine
@@ -23,9 +23,8 @@ EXPOSE 80
 
 ## 이미지 빌드
 
-이미지 빌드에는 프로젝트 루트의 `Dockerfile`을 사용했다. 별도의 `-f` 옵션을
-지정하지 않았으므로 Docker는 빌드 컨텍스트의 기본 파일인 `./Dockerfile`을
-자동으로 선택한다. 이 Dockerfile의 베이스 이미지는 Docker Hub의 공식 NGINX
+이미지 빌드에는 프로젝트 루트의 `Dockerfile.web`을 사용했다. 별도의 `-f` 옵션으로 `./Dockerfile.web`을
+선택한다. 이 Dockerfile의 베이스 이미지는 Docker Hub의 공식 NGINX
 Alpine 이미지인 `nginx:alpine`이다.
 
 프로젝트 루트에서 다음 명령을 실행한다.
@@ -59,7 +58,7 @@ codyssey-web   1.1       cf33ad749475   20 hours ago   62.4MB
 호스트의 8080번 포트를 컨테이너의 80번 포트에 연결해 백그라운드로 실행한다.
 
 ```console
-$ docker run -d --name codyssey-custom-image -p 8080:80 codyssey-web:1.0
+$ docker run -d --name codyssey-custom-image -p 8080:80 codyssey-web:1.1
 66fca770f7dafde060a872f3d21bc589409b58196e0bc95dd0eda468a8768b1d
 ```
 

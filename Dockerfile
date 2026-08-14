@@ -1,6 +1,3 @@
-FROM nginx:alpine
+FROM alpine
 
-COPY app/ /usr/share/nginx/html/
-
-EXPOSE 80
-
+CMD ["echo", "hello world"]
