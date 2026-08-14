@@ -31,7 +31,7 @@ Alpine 이미지인 `nginx:alpine`이다.
 프로젝트 루트에서 다음 명령을 실행한다.
 
 ```console
-$ docker build -t codyssey-web:1.0 .
+$ docker build -t codyssey-web:1.1 .
 #0 building with "orbstack" instance using docker driver
 #1 [internal] load build definition from Dockerfile
 #2 [internal] load metadata for docker.io/library/nginx:alpine
@@ -42,15 +42,16 @@ $ docker build -t codyssey-web:1.0 .
 #7 DONE 0.2s
 ```
 
-- `-t codyssey-web:1.0`: 이미지 이름을 `codyssey-web`, 태그를 `1.0`으로 지정한다.
+- `-t codyssey-web:1.1`: 이미지 이름을 `codyssey-web`, 태그를 `1.1`으로 지정한다.
 - 마지막의 `.`: 현재 디렉터리를 빌드 컨텍스트로 전달한다.
 
 빌드 후 이미지가 생성되었는지 확인한다.
 
 ```console
 $ docker images
-REPOSITORY     TAG       IMAGE ID       CREATED         SIZE
-codyssey-web   1.0       5c1b4e315df2   3 minutes ago   62.4MB
+REPOSITORY     TAG       IMAGE ID       CREATED        SIZE
+codyssey-web   1.0       cf33ad749475   20 hours ago   62.4MB
+codyssey-web   1.1       cf33ad749475   20 hours ago   62.4MB
 ```
 
 ## 컨테이너 실행

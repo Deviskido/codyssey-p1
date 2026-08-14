@@ -7,7 +7,7 @@ BuildVersion:           24G517
 $ printf '%s\n' "$SHELL"
 /bin/zsh
 
-$ printf '%s\n' "${TERM_PROGRAM:-unknown}"
+$ printf '%s\n' "${TERM_PROGRAM}"
 Apple_Terminal
 
 $ docker --version

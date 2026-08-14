@@ -50,20 +50,16 @@
 
 ## 3.6 기존 Dockerfile 기반 커스텀 이미지 제작
 
-- [수행 로그 및 증거](./evidence/tasks/custom-image.md)
+- [./evidence/tasks/custom-image.md](./evidence/tasks/custom-image.md)
 
 ## 3.7 포트매팅 및 접속 증거
 
-- [수행 로그 및 증거](./evidence/tasks/port-mapping.md)
+- [./evidence/tasks/port-mapping.md](./evidence/tasks/port-mapping.md)
 
 ## 3.8 Docker 볼륨 영속성 검증
 
-- [수행 로그 및 증거](./evidence/tasks/docker-volume.md)
+- [./evidence/tasks/docker-volume.md](./evidence/tasks/docker-volume.md)
 
 ## 3.9 Git 설정 및 GitHub 연동
 
-- [수행 로그 및 증거](./evidence/tasks/git-github.md)
-
-## 3.10 보안 및 개인정보보호
-
-- [수행 로그 및 증거](./evidence/tasks/security.md)
+- [./evidence/tasks/git-github-vscode.md](./evidence/tasks/git-github-vscode.md)
