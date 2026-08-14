@@ -18,7 +18,6 @@
 │   └── terminal-practice/
 ├── Dockerfile              # Alpine 기반 기본 컨테이너 예제
 ├── Dockerfile.ubuntu       # Ubuntu 기반 이미지 예제
-├── Dockerfile.web          # Nginx 웹 서버 이미지 설정
 └── README.md               # 프로젝트 개요 및 수행 내역
 ```
 
