@@ -5,8 +5,8 @@
 다음 명령으로 전역 사용자 정보와 새 저장소의 기본 브랜치를 설정했다.
 
 ```bash
-git config --global user.name "강동하"
-git config --global user.email "rkdsim28@gmail.com"
+git config --global user.name "<NAME>"
+git config --global user.email "<EMAIL>"
 git config --global init.defaultBranch main
 
 git config --global credential.helper osxkeychain
@@ -21,8 +21,8 @@ password=PAT
 
 ```text
 credential.helper=osxkeychain
-user.name=강동하
-user.email=rkdsim28@gmail.com
+user.name=<NAME>
+user.email=<EMAIL>
 init.defaultbranch=main
 core.repositoryformatversion=0
 core.filemode=true
@@ -33,7 +33,7 @@ core.precomposeunicode=true
 ```
 ```
 git init
-Initialized empty Git repository in /Users/rkdsim900244/tmp/.git/
+Initialized empty Git repository in /Users/<USER>/tmp/.git/
 
 git status
 On branch main
@@ -74,7 +74,7 @@ git init
 git add README.md
 git commit -m "first commit"
 git branch -M main
-git remote add origin https://github.com/Deviskido/test.git
+git remote add origin https://github.com/<GITHUB_USER>/test.git
 git push -u origin main
 ```
 

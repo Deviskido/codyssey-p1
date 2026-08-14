@@ -81,3 +81,7 @@
 ## 3.9 Git 설정 및 GitHub 연동
 
 - [./evidence/tasks/git-github-vscode.md](./evidence/tasks/git-github-vscode.md)
+
+## 3.10 트러블슈팅
+
+- [./evidence/tasks/trouble-shooting.md](./evidence/tasks/trouble-shooting.md)

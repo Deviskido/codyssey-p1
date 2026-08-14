@@ -22,10 +22,10 @@ Client:
  Plugins:
   buildx: Docker Buildx (Docker Inc.)
     Version:  v0.29.1
-    Path:     /Users/rkdsim900244/.docker/cli-plugins/docker-buildx
+    Path:     /Users/<USER>/.docker/cli-plugins/docker-buildx
   compose: Docker Compose (Docker Inc.)
     Version:  v2.40.3
-    Path:     /Users/rkdsim900244/.docker/cli-plugins/docker-compose
+    Path:     /Users/<USER>/.docker/cli-plugins/docker-compose
 
 Server:
  Containers: 0

@@ -7,7 +7,7 @@
 
 ## Dockerfile 구성
 
-프로젝트 루트의 `Dockerfile.web`은 다음과 같다.
+프로젝트 루트의 `Dockerfile`은 다음과 같다.
 
 ```dockerfile
 FROM nginx:alpine
@@ -23,14 +23,14 @@ EXPOSE 80
 
 ## 이미지 빌드
 
-이미지 빌드에는 프로젝트 루트의 `Dockerfile.web`을 사용했다. 별도의 `-f` 옵션으로 `./Dockerfile.web`을
+이미지 빌드에는 프로젝트 루트의 `Dockerfile`을 사용했다. 별도의 `-f` 옵션으로 `./Dockerfile`을
 선택한다. 이 Dockerfile의 베이스 이미지는 Docker Hub의 공식 NGINX
 Alpine 이미지인 `nginx:alpine`이다.
 
 프로젝트 루트에서 다음 명령을 실행한다.
 
 ```console
-$ docker build -t codyssey-web:1.1 .
+$ docker build -t codyssey-web:1.1 -f ./Dockerfile .
 #0 building with "orbstack" instance using docker driver
 #1 [internal] load build definition from Dockerfile
 #2 [internal] load metadata for docker.io/library/nginx:alpine
@@ -70,6 +70,6 @@ CONTAINER ID   IMAGE              COMMAND                  CREATED         STATU
 0c81f527cc72   codyssey-web:1.0   "/docker-entrypoint.…"   2 seconds ago   Up 1 second   0.0.0.0:8080->80/tcp, [::]:8080->80/tcp   codyssey-custom-image
 ```
 
-## 이미지와 컨테이너의 차이
 
-이미지는 애플리케이션과 실행 환경을 담은 불변의 템플릿이며, 컨테이너는 그 이미지 위에 쓰기 가능한 계층을 추가해 실행한 인스턴스이다. 예를 들어 `codyssey-web:1.1` 이미지는 바뀌지 않지만, 이를 실행한 `codyssey-custom-image` 컨테이너에서 생성하거나 수정한 파일은 해당 컨테이너의 쓰기 계층에 저장된다.
+
+

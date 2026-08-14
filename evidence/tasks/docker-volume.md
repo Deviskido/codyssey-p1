@@ -86,3 +86,4 @@ volume data survives container deletion
 
 - named volume의 데이터는 해당 볼륨을 사용하던 컨테이너를 삭제해도 유지된다.
 - 같은 named volume을 새 컨테이너에 연결하면 기존 데이터를 다시 사용할 수 있다.
+- codyssey-persistent-data 을 docker를 통해 유지하고있으면(백업)컨테이너를 삭제해도 다시 마운트하여 해당 컨테이너에서 복원하여 할수있다.
