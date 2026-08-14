@@ -4,6 +4,24 @@
 
 터미널, 파일 권한, Docker, Git/GitHub를 직접 사용해 재현 가능한 개발 환경을 구축하고, 각 단계의 명령과 검증 결과를 문서화하는 프로젝트입니다.
 
+## 1.1 프로젝트 구조
+
+```text
+.
+├── app/                    # 웹 컨테이너에서 제공할 정적 페이지
+│   └── index.html          # 개발 워크스테이션 안내 페이지
+├── evidence/               # 과제 수행 및 검증 자료
+│   ├── images/             # 실행 결과 스크린샷
+│   └── tasks/              # 항목별 수행 과정과 결과 문서
+├── practice/               # 터미널 및 파일 권한 실습 파일
+│   ├── permission-practice/
+│   └── terminal-practice/
+├── Dockerfile              # Alpine 기반 기본 컨테이너 예제
+├── Dockerfile.ubuntu       # Ubuntu 기반 이미지 예제
+├── Dockerfile.web          # Nginx 웹 서버 이미지 설정
+└── README.md               # 프로젝트 개요 및 수행 내역
+```
+
 ## 2. 실행 환경
 
 - OS: macOS 15.7.4 (Build 24G517, x86_64)
