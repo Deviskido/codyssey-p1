@@ -70,6 +70,7 @@ CONTAINER ID   IMAGE              COMMAND                  CREATED         STATU
 0c81f527cc72   codyssey-web:1.0   "/docker-entrypoint.…"   2 seconds ago   Up 1 second   0.0.0.0:8080->80/tcp, [::]:8080->80/tcp   codyssey-custom-image
 ```
 
-
-
+## 컨테이너와 이미지의 차이
+이미지 = 변경되지 않는 실행 환경의 템플릿
+컨테이너 = 이미지를 기반으로 생성되어 실제로 실행되고 상태가 변할 수 있는 인스턴스
 

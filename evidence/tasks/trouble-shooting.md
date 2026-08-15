@@ -48,4 +48,5 @@ cdca5504184e   codyssey-web:1.1   "/docker-entrypoint.…"   8 minutes ago    Up
 63a580c197d0   hello-world        "/hello"                 15 minutes ago   Exited (0) 15 minutes ago                                             stupefied_pare
 % docker rm codyssey-custom-image
 Error response from daemon: cannot remove container "codyssey-custom-image": container is running: stop the container before removing or force remove
+% docker rm -f codyssey-custom-imnage
 ```
