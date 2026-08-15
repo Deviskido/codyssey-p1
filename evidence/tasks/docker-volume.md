@@ -78,29 +78,40 @@ volume data survives container deletion
 컨테이너의 쓰기 계층이 아니라 named volume에 저장되며, 컨테이너가 삭제되어도
 유지됨을 확인했다. 두 번째 컨테이너는 `--rm` 옵션으로 실행 종료 후 자동 삭제됐다.
 
-```
-  echo "before" > practice/message.txt
+##바인드마운트
 
-  docker run -d \
+```
+$ echo "before" > practice/message.txt
+
+$ docker run -dit \
     --name codyssey-bindmount \
-    --mount type=bind,source="$(pwd)/practice/message.txt",target=/data \
-    nginx:alpine
-
-    cat practice/message.txt
+    -p 8080:80 \
+    --mount type=bind,source="$(pwd)/practice/message.txt",target=/data/message.txt \
+    codyssey-web:1.0
 ```
 
-echo "add" >>  /practice/message.txt
-
-  # 컨테이너 안에서 파일 수정
-  docker exec codyssey-bindmount \
-    sh -c 'echo "컨테이너에서 추가한 내용" >> /data'
-
-  # 호스트에서 수정 결과 확인
-  cat practice/message.txt
+컨테이너 실행
+```
+$ docker attach codyssey-bindmount
+$ cat data/message.txt
+before
+```
 
 
-<!-- How to remove docker volume
-`docker volume rm codyssey-persistent-data` -->
+호스트에서 변경
+```
+$ echo "add" >>  ./practice/message.txt
+$ cat practice/message.txt
+before
+add
+```
+
+컨테이너 내부에서
+```
+$cat data/message.txt
+before
+add
+```
 
 ## 결론
 
